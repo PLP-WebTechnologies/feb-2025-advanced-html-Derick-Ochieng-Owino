@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia Webpage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            text-align: center;
+        }
+        table {
+            width: 50%;
+            margin: auto;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        form {
+            width: 300px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Our Multimedia Webpage</h1>
+
+    <img src="https://via.placeholder.com/400" alt="Sample Image" width="400">
+
+    <h2>Watch this Video</h2>
+    <video width="400" controls>
+        <source src="video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <h2>Listen to this Audio</h2>
+    <audio controls>
+        <source src="audio.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <h2>Registration Form</h2>
+    <form action="#" method="post">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="Full Name" required><br><br>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Email " required><br><br>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Password " minlength="6" required><br><br>
+        
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="18" placeholder="Age " required><br><br>
+        
+        <input type="submit" value="Register">
+    </form>
+
+    <h2>Student Scores</h2>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Subject</th>
+            <th>Score</th>
+        </tr>
+        <tr>
+            <td>Derick Ochieng</td>
+            <td>Mathematics</td>
+            <td>95</td>
+        </tr>
+        <tr>
+            <td>Rosemary Nduta</td>
+            <td>Physics</td>
+            <td>84</td>
+        </tr>
+        <tr>
+            <td>Eileen Esendi</td>
+            <td>Kiswahili</td>
+            <td>89</td>
+        </tr>
+        <tr>
+            <td>Dennis Chege</td>
+            <td>Chemistry</td>
+            <td>94</td>
+        </tr>
+    </table>
+
+    <h2>Programming Languages to Learn</h2>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Python</li>
+        <li>Java</li>
+    </ul>
+</body>
+</html>
