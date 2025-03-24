@@ -3,102 +3,195 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Multimedia Webpage</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            text-align: center;
-        }
-        table {
-            width: 50%;
-            margin: auto;
-            border-collapse: collapse;
-        }
-        th, td {
-            border: 1px solid black;
-            padding: 10px;
-            text-align: center;
-        }
-        form {
-            width: 300px;
-            margin: auto;
-            padding: 20px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-    </style>
+    <title>Coffee Shop</title>
 </head>
 <body>
-    <h1>Welcome to Our Multimedia Webpage</h1>
+    <h1>WELCOME TO MY COFFEE SHOP</h1>
+    <p><b>MENU</b></p>
+    <ol type="I">
+        <li>Espresso</li>
+        <li>Smoothies</li>
+        <li>Pastries</li>
+        <li>Sandwiches</li>
+        <li>Salads</li>     
+        <li>Capuccino</li>
+        <li>Latte</li> 
 
-    <img src="https://via.placeholder.com/400" alt="Sample Image" width="400">
+    </ol>
 
-    <h2>Watch this Video</h2>
-    <video width="400" controls>
-        <source src="video.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
+    <img src="https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg?auto=compress&cs=tinysrgb&w=600" alt="This is a photo of coffee">
 
-    <h2>Listen to this Audio</h2>
-    <audio controls>
-        <source src="audio.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
-
-    <h2>Registration Form</h2>
-    <form action="#" method="post">
-        <label for="name">Full Name:</label>
-        <input type="text" id="name" name="name" placeholder="Full Name" required><br><br>
-        
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" placeholder="Email " required><br><br>
-        
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" placeholder="Password " minlength="6" required><br><br>
-        
-        <label for="age">Age:</label>
-        <input type="number" id="age" name="age" min="18" placeholder="Age " required><br><br>
-        
-        <input type="submit" value="Register">
-    </form>
-
-    <h2>Student Scores</h2>
     <table>
-        <tr>
-            <th>Name</th>
-            <th>Subject</th>
-            <th>Score</th>
-        </tr>
-        <tr>
-            <td>Derick Ochieng</td>
-            <td>Mathematics</td>
-            <td>95</td>
-        </tr>
-        <tr>
-            <td>Rosemary Nduta</td>
-            <td>Physics</td>
-            <td>84</td>
-        </tr>
-        <tr>
-            <td>Eileen Esendi</td>
-            <td>Kiswahili</td>
-            <td>89</td>
-        </tr>
-        <tr>
-            <td>Dennis Chege</td>
-            <td>Chemistry</td>
-            <td>94</td>
-        </tr>
+        <thead>
+            <tr>
+                <th>NAME</th>
+                <th>ADRESS</th>
+                <th>MOBILE</th>
+                <th>EMAIL</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Derick Ochieng</td>
+                <td>Nairobi, Embakasi</td>
+                <td>+254722262381</td>
+                <td>derickrevived777@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Everlyn Njeri</td>
+                <td>Kisumu, Kondele</td>
+                <td>+254781110578</td>
+                <td>njerieverlyn@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Rosemary Nduta</td>
+                <td>Machakos, Matuu</td>
+                <td>+254740095168</td>
+                <td>kabiarunduta@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Dennis Chege</td>
+                <td>Kiambu, Juja</td>
+                <td>+254789023141</td>
+                <td>dennischege@gmail.com</td>
+            </tr>
+            <tfoot>
+                <tr>
+                    <td>Esther Oyoo</td>
+                    <td>Kiambu, Kikuyu</td>
+                    <td>+254765432178</td>
+                    <td>oyooesther@gmail.com</td>
+                </tr>
+            </tfoot>
+        </tbody>
     </table>
 
-    <h2>Programming Languages to Learn</h2>
-    <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>Python</li>
-        <li>Java</li>
-    </ul>
+    <p>Fill in this form to place your order.</p>
+    <div class="order_form">
+    <form action="" class="orderform">
+        <img class="roundimage" src="https://images.pexels.com/photos/29179913/pexels-photo-29179913/free-photo-of-aromatic-black-coffee-decorated-with-orange-zest.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+        <input type="text" name="name" placeholder="Enter your name" required>
+        <input type="email" name="email" placeholder="Enter your email" required>
+        <input type="password" name="password" placeholder="Enter your password" required>
+        <input type="date" name="date" placeholder="Enter your date of birth" required>
+
+            <select name="dropdown" id="" class="dropdown" required>
+                <option value="0" disabled selected>Select Type of Drink</option>
+                <option value="Espresso">Espresso</option>
+                <option value="Smoothies">Smoothies</option>
+                <option value="Pastries">Pastries</option>
+                <option value="Sandwiches">Sandwiches</option>
+                <option value="Salads">Salads</option>
+                <option value="Capuccino">Capuccino</option>
+                <option value="Latte">Latte</option>
+            </select><br>
+
+            <fieldset class="radio-group">
+                <label for="drink_preference">How do you like your drinks?</label><hr>
+
+                <label for="hot">
+                <input type="radio" id="hot" name="drink_preference" value="Hot">
+                Hot</label><hr>
+
+                <label for="cold">
+                <input type="radio" id="cold" name="drink_preference" value="Cold">
+                Cold</label><hr>
+
+                <label for="warm">
+                <input type="radio" id="warm" name="drink_preference" value="Warm">Warm
+                </label>
+            </fieldset>
+                <br>
+                <label for="confirm_order">Confirm your order</label>
+                <input type="checkbox" id="confirm_order" name="confirm_order" required>
+                
+        
+        <input type="submit" value="Submit">
+    </form>
+</div>
+
+    <style>
+label {
+    display: block;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+body {
+    background-color: #FFF8E1;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color: #4E342E;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.order_form {
+    background-color: #D7CCC8;
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+    margin: 20px auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+input, select {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #4E342E;
+    width: 80%;
+}
+
+input[type="submit"] {
+    background-color: #4E342E;
+    color: white;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+input[type="submit"]:hover {
+    background-color: #6D4C41;
+}
+
+table {
+    width: 60%;
+    border-collapse: collapse;
+    border: 2px solid #4E342E;
+    margin: 20px auto;
+}
+
+th, td {
+    border: 1px solid #4E342E;
+    padding: 12px;
+}
+
+tr:nth-child(even) {
+    background-color: #EFEBE9;
+}
+
+img {
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.roundimage{
+    border-radius: 50%;
+    width: 200px;
+    height: 300px;
+}
+
+.radio-group label, 
+.radio-group input {
+    display: inline-block;
+    margin-right: 0px;
+}
+
+
+    </style>
 </body>
 </html>
